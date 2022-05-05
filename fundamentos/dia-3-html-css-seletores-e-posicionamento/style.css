@@ -1,3 +1,10 @@
+*{
+  margin: 0px;
+  padding: 0;
+  background-color: rgb(6, 124, 132);
+}
+
+
 .caixa {
     color: white;
     display: inline-block;
@@ -19,11 +26,16 @@
   
   /* insira na classe abaixo uma margem de 30px para aplicá-la aos itens C e D */
   .margin {
-      margin: 30px;
+      margin: 0;
   
   }
   
   /* insira na classe abaixo uma borda com valor '5px solid black' para aplicá-la ao item D */
   .border {
       border: 5px solid black;
+  }
+  #d-letter{
+      padding: 75px;
+      width: 45px;
+      height: 45px;
   }
