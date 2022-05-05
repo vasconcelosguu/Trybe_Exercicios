@@ -24,10 +24,10 @@
   
   .speach {
     position: absolute;
-    width: 50px;
+    width: 200px;
     font-size: 25px;
     z-index: 5;
-    top: 190px;
+    top: 200px;
     left: 300px;
   }
   
