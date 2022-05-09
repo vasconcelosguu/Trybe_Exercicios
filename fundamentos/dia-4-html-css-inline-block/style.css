@@ -16,7 +16,8 @@ li {
   height: 50px;
   text-align: center;
   width: 200px;
-  margin-left: 800px;
+  display: block;
+  margin: 0 auto;
 }
 
 .second {
