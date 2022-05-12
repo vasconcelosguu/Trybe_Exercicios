@@ -1,5 +1,5 @@
 const currentHour = 5;
-var message
+let message;
 
 if (currentHour >= 22) {
   message = "Não deveríamos comer nada, é hora de dormir";
@@ -10,7 +10,7 @@ if (currentHour >= 22) {
 } else if (currentHour >=11 && currentHour <=14) {
   message = "Hora do almoço!!!";
 } else {
-  message = "Hmmm, cheiro de café recém passado"
+  message = "Hmmm, cheiro de café recém passado";
 }
 
 console.log(message);
