@@ -39,11 +39,11 @@ if (valor1 > valor2 && valor1 > valor3) {
 const numero = 1;
 
 if (numero > 0) {
-  console.log (positive);
+  console.log ("positive");
 } else if (numero < 0) {
-  console.log (negative);
+  console.log ("negative");
 } else {
-  console.log (zero);
+  console.log ("zero");
 }
 
 //Exercicio 5
