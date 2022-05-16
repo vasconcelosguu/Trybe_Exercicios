@@ -34,5 +34,38 @@
 //     menorPalavra = array[i];
 //   };
 // };
-
+//
 // console.log(menorPalavra, maiorPalavra);
+//
+//
+//Exercicio 4 //
+// let maiorPrimo = 0;
+//
+// for (let number = 3; number < 50; number++) {
+//   for (let divisor = 2; divisor < number; divisor++) {
+//     if (number % divisor === 0) break;
+//     if (divisor == number -1) {
+//       maiorPrimo = number;
+//       console.log(maiorPrimo);
+//     }
+//   };
+// };
+//
+// console.log(maiorPrimo);
+//
+//OUTRA SOLUÇÂO//
+// let maiorPrimo;
+//
+// for (let number = 50; number > 2; number--) {
+//   if (maiorPrimo) break;
+//
+//   for (let divisor = 2; divisor < number; divisor++) {
+//     if (number % divisor === 0) break;
+//     if (divisor == number -1) {
+//       maiorPrimo = number; 
+//       break;
+//     }
+//   };
+// }
+//
+// console.log(maiorPrimo);
