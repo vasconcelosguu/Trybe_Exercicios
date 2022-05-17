@@ -56,16 +56,16 @@
 //EXERCICIO 5//
 
 
-let n = 5;
+let n = 7;
 const mid = (n + 1) /2;
 
 for (let line = 1; line <= mid; line++) {
   let lineCont = "";
 
   for (let col = 1; col <= n; col++) {
-    if (Math.abs(mid - col) == line +1) { 
+    if (Math.abs(mid - col) == line -1 || line == mid) { 
       lineCont += "*";
-    } else lineCont += "-";
+    } else lineCont += " ";
   }
   console.log(lineCont);
 }
