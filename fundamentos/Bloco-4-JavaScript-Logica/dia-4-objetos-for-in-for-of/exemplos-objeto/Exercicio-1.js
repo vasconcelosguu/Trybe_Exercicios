@@ -12,4 +12,4 @@ let player = {
     silver: 3
   }
 };
-console.log(player.medals.golden);
+console.log("A");
