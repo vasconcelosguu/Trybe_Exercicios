@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width" />
+    <title>Exercício 5.1</title>
+    
+    <style>
+      main, section {
+        border-color: black;
+        border-style: solid;
+      }
+
+      .title {
+        text-align: center;
+      }
+
+      .main-content {
+        background-color: yellow;
+      }
+
+      .main-content .center-content {
+        background-color: red;
+        width: 50%;
+        margin: 0 auto;
+      }
+
+      .main-content .center-content p {
+        font-style: italic;
+      }
+    </style>
+  </head>
+  <body>
+    <header> 
+      <h1 class="title">Exercício 5.1 - JavaEscripito </h1>
+    </header>    
+    <main class="main-content">
+      <section class="center-content">
+        <p>Texto padrão do nosso site</p>
+        <p id ="sonhos">-----</p>
+        <p>Trybe</p>
+      </section>
+    </main>
+    <script>
+        /*
+        Aqui você vai modificar os elementos já existentes utilizando apenas as funções:
+        - document.getElementById()
+        - document.getElementsByClassName()
+        - document.getElementsByTagName()
+ Crie uma função que exiba o conteúdo de todas as tags <p> no console.
+        */
+
+      function changeText (text) {
+        const sonhosHtml = document.getElementById('sonhos');
+
+        sonhosHtml.innerText = text;
+      }
+
+      function changeColor (color) {
+        const colorHtml = document.querySelector('.main-content');
+
+        colorHtml.style.backgroundColor = color;
+      }
+      
+      function changeCenterColor (color) {
+        const centerHtml = document.getElementsByClassName('center-content')[0];
+        
+        centerHtml.style.backgroundColor = color;
+      }
+      changeCenterColor('white');
+
+      function fixText (text) {
+        const titleText = document.getElementsByClassName('title')[0];
+
+        titleText.innerText = text;
+      }
+      fixText('JavaScript');
+
+      function highText (path) {
+        path.innerText = path.innerText.toUpperCase();
+      }
+
+      function show () {
+        const path = document.querySelectorAll('.center-content p');
+
+        for (let content of path) {
+          console.log(content);
+        }
+      }
+
+      show();
+      highText (document.getElementById('sonhos'));
+      changeText('lontra');
+    </script>
+  </body>
+</html>
