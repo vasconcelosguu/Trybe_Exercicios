@@ -27,3 +27,24 @@ let newP = document.createElement('p');
 
 newP.innerText = 'Eu amo lontras';
 section.appendChild(newP);
+
+//Exercicio 5
+let leftSection = document.createElement('section');
+
+leftSection.className = 'left-content';
+main.appendChild(leftSection);
+
+
+//Exercicio 6
+let rightSection = document.createElement('section');
+
+rightSection.className = 'right-content';
+main.appendChild(rightSection);
+
+//Exercicio 7
+let image = document.createElement('img');
+
+image.src = 'https://picsum.photos/200';
+image.className = 'small-image';
+leftSection.appendChild(image);
+
