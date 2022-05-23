@@ -54,11 +54,11 @@ const btnHolidays = (feriados) => {
 btnHolidays('Feriado!!');
 
 let myButton = document.querySelector('button');
-let corzinhaPrincipal = 'red';
-let corzinhaNova = 'rgb(238,238,238)';
+// let corzinhaPrincipal = 'red';
+// let corzinhaNova = 'rgb(238,238,238)';
 
 
-const changeColorHoliday = () => {
+const changeColorHoliday = (corzinhaPrincipal, corzinhaNova) => {
   myButton.addEventListener('click', function(){
     let listItensHolidays = document.querySelectorAll('.holiday');
     for (let index in holiday) {
@@ -71,7 +71,7 @@ const changeColorHoliday = () => {
   })
 };
 
-changeColorHoliday();
+changeColorHoliday('red', 'rgb(238,238,238)' );
 
 let fridayParty = (sextaFeira) => {
   let butaoSextinha = document.createElement('button');
@@ -83,10 +83,10 @@ let fridayParty = (sextaFeira) => {
 fridayParty('Sextinha!!');
 
 let buttonSexta = document.querySelector('#btn-friday');
-let newText = 'Sexta-feira';
+// let newText = 'Sexta-feira';
 
 
-const changeText = () => {
+const changeText = (newText) => {
  buttonSexta.addEventListener('click', function(){
   for (let i in friday){
     let listItensFridays = document.querySelectorAll('.friday')
@@ -98,4 +98,4 @@ const changeText = () => {
 }
 })
 };
-changeText();
+changeText('Sextou Guys');
