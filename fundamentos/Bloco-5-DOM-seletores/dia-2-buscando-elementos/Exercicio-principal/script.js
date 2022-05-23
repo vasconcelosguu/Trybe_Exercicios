@@ -48,3 +48,10 @@ image.src = 'https://picsum.photos/200';
 image.className = 'small-image';
 leftSection.appendChild(image);
 
+//Exercicio 8
+let list = document.createElement('ul');
+let  = ['um', 'dois', 'três','quatro', 'cinco', 'seis', 'sete', 'oito', 'nove', 'dez'];
+
+for (let value in object) {
+    
+  }
