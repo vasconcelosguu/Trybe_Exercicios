@@ -51,4 +51,24 @@ const btnHolidays = (feriados) => {
   myDiv.appendChild(butaoFeriados);
 }
 
-btnHolidays('lontra');
+btnHolidays('Feriado!!');
+
+let myButton = document.querySelector('button');
+let corzinhaPrincipal = 'red';
+let corzinhaNova = 'rgb(238,238,238)';
+
+
+const changeColorHoliday = () => {
+  myButton.addEventListener('click', function(){
+    let listItensHolidays = document.querySelectorAll('.holiday');
+    for (let index in holiday) {
+    if (listItensHolidays[index].style.backgroundColor === corzinhaPrincipal) {
+      listItensHolidays[index].style.backgroundColor = corzinhaNova;
+    } else {
+      listItensHolidays[index].style.backgroundColor = corzinhaPrincipal;
+    }
+  }
+  })
+};
+
+changeColorHoliday();
