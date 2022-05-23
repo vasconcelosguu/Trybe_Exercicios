@@ -72,3 +72,30 @@ const changeColorHoliday = () => {
 };
 
 changeColorHoliday();
+
+let fridayParty = (sextaFeira) => {
+  let butaoSextinha = document.createElement('button');
+  butaoSextinha.id = 'btn-friday';
+  butaoSextinha.innerText = sextaFeira
+  myDiv.appendChild(butaoSextinha);
+}
+
+fridayParty('Sextinha!!');
+
+let buttonSexta = document.querySelector('#btn-friday');
+let newText = 'Sexta-feira';
+
+
+const changeText = () => {
+ buttonSexta.addEventListener('click', function(){
+  for (let i in friday){
+    let listItensFridays = document.querySelectorAll('.friday')
+    if (listItensFridays[i].innerText === newText) {
+      listItensFridays[i].innerText = friday[i];  //array
+    } else {
+      listItensFridays[i].innerText = newText;
+  }
+}
+})
+};
+changeText();
