@@ -54,24 +54,25 @@ const btnHolidays = (feriados) => {
 btnHolidays('Feriado!!');
 
 let myButton = document.querySelector('button');
-let corzinhaPrincipal = 'red';
-let corzinhaNova = 'rgb(238,238,238)';
+// let corzinhaPrincipal = 'red';
+// let corzinhaNova = 'rgb(238,238,238)';
 
 
-const changeColorHoliday = () => {
-  myButton.addEventListener('click', function(){
+const changeColorHoliday = (corzinhaPrincipal, corzinhaNova) => {
+  myButton.addEventListener('click', () => {
     let listItensHolidays = document.querySelectorAll('.holiday');
     for (let index in holiday) {
-    if (listItensHolidays[index].style.backgroundColor === corzinhaPrincipal) {
-      listItensHolidays[index].style.backgroundColor = corzinhaNova;
+      const caminho = listItensHolidays[index].style
+    if (caminho.background === corzinhaPrincipal) {
+      caminho.background = corzinhaNova;
     } else {
-      listItensHolidays[index].style.backgroundColor = corzinhaPrincipal;
+      caminho.background = corzinhaPrincipal;
     }
   }
   })
 };
 
-changeColorHoliday();
+changeColorHoliday('red', 'rgb(238,238,238)' );
 
 let fridayParty = (sextaFeira) => {
   let butaoSextinha = document.createElement('button');
@@ -83,11 +84,11 @@ let fridayParty = (sextaFeira) => {
 fridayParty('Sextinha!!');
 
 let buttonSexta = document.querySelector('#btn-friday');
-let newText = 'Sexta-feira';
+// let newText = 'Sexta-feira';
 
 
-const changeText = () => {
- buttonSexta.addEventListener('click', function(){
+const changeText = (newText) => {
+ buttonSexta.addEventListener('click', () => {
   for (let i in friday){
     let listItensFridays = document.querySelectorAll('.friday')
     if (listItensFridays[i].innerText === newText) {
@@ -98,4 +99,25 @@ const changeText = () => {
 }
 })
 };
-changeText();
+changeText('Sextou Guys');
+
+// EXERCICIO 6 
+
+const myDays = document.querySelector('#days');
+
+const zoomDays = () => {
+  myDays.addEventListener('mouseover', (event) => {
+    event.target.style.fontSize = '35px'
+    event.target.style.fontWeight = '650';
+  })
+}
+
+const ZoomOff = () => {
+  myDays.addEventListener('mouseout', (event) => {
+    event.target.style.fontSize = '20px'
+    event.target.style.fontWeight = '200';
+  })
+}
+ZoomOff();
+
+zoomDays();
