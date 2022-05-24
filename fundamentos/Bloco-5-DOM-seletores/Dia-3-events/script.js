@@ -100,3 +100,24 @@ const changeText = (newText) => {
 })
 };
 changeText('Sextou Guys');
+
+// EXERCICIO 6 
+
+const myDays = document.querySelector('#days');
+
+const zoomDays = () => {
+  myDays.addEventListener('mouseover', (event) => {
+    event.target.style.fontSize = '35px'
+    event.target.style.fontWeight = '650';
+  })
+}
+
+const ZoomOff = () => {
+  myDays.addEventListener('mouseout', (event) => {
+    event.target.style.fontSize = '20px'
+    event.target.style.fontWeight = '200';
+  })
+}
+ZoomOff();
+
+zoomDays();
