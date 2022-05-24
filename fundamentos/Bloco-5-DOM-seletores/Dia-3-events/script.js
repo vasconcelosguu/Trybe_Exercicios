@@ -59,13 +59,14 @@ let myButton = document.querySelector('button');
 
 
 const changeColorHoliday = (corzinhaPrincipal, corzinhaNova) => {
-  myButton.addEventListener('click', function(){
+  myButton.addEventListener('click', () => {
     let listItensHolidays = document.querySelectorAll('.holiday');
     for (let index in holiday) {
-    if (listItensHolidays[index].style.backgroundColor === corzinhaPrincipal) {
-      listItensHolidays[index].style.backgroundColor = corzinhaNova;
+      const caminho = listItensHolidays[index].style
+    if (caminho.background === corzinhaPrincipal) {
+      caminho.background = corzinhaNova;
     } else {
-      listItensHolidays[index].style.backgroundColor = corzinhaPrincipal;
+      caminho.background = corzinhaPrincipal;
     }
   }
   })
@@ -87,7 +88,7 @@ let buttonSexta = document.querySelector('#btn-friday');
 
 
 const changeText = (newText) => {
- buttonSexta.addEventListener('click', function(){
+ buttonSexta.addEventListener('click', () => {
   for (let i in friday){
     let listItensFridays = document.querySelectorAll('.friday')
     if (listItensFridays[i].innerText === newText) {
