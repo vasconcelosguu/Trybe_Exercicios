@@ -109,6 +109,7 @@ const zoomDays = () => {
   myDays.addEventListener('mouseover', (event) => {
     event.target.style.fontSize = '35px'
     event.target.style.fontWeight = '650';
+    event.target.style.color = 'green';
   })
 }
 
@@ -116,8 +117,8 @@ const ZoomOff = () => {
   myDays.addEventListener('mouseout', (event) => {
     event.target.style.fontSize = '20px'
     event.target.style.fontWeight = '200';
+    event.target.style.color = 'gray';
   })
 }
 ZoomOff();
-
 zoomDays();
