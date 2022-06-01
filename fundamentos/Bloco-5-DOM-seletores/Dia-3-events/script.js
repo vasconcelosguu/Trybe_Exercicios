@@ -69,7 +69,7 @@ const changeColorHoliday = (corzinhaPrincipal, corzinhaNova) => {
       caminho.background = corzinhaPrincipal;
     }
   }
-  })
+  });
 };
 
 changeColorHoliday('red', 'rgb(238,238,238)' );
