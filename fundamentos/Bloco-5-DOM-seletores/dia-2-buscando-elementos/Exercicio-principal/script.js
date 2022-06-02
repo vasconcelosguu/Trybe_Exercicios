@@ -50,8 +50,11 @@ leftSection.appendChild(image);
 
 //Exercicio 8
 let list = document.createElement('ul');
-let  = ['um', 'dois', 'três','quatro', 'cinco', 'seis', 'sete', 'oito', 'nove', 'dez'];
+rightSection.appendChild(list);
+let  numbers  = ['um', 'dois', 'três','quatro', 'cinco', 'seis', 'sete', 'oito', 'nove', 'dez'];
 
-for (let value in object) {
-    
+for (let value in numbers) {
+    const listinha = document.createElement('li');
+    listinha.innerText = numbers[value];
+    list.appendChild(listinha);
   }
