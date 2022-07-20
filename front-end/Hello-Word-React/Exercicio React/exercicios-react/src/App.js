@@ -16,7 +16,7 @@ function App() {
     <div>
       <Header/>
          <ol>
-          {tasks.map((taskss) =>{
+          {tasks.map((taskss,i) =>{
             return (
               Task(taskss)
               );
